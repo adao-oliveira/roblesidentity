@@ -11,6 +11,9 @@ const Ul = styled.ul`
   li {
     padding: 18px 10px;
   }
+  li:hover {
+    color: #0700e0;
+  }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #000;
