@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { Servicos } from './Servicos';
-import { Contatos } from './Contatos';
+import { Contato } from './Contato';
 import { Layout } from './components/Layout';
 import Navbar from './components/Navbar';
 import { Jumbotron } from './components/Jumbotron';
@@ -18,7 +18,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/servicos" component={Servicos} />
-              <Route path="/contatos" component={Contatos} />
+              <Route path="/contato" component={Contato} />
             </Switch>
           </Layout>
         </Router>

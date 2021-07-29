@@ -8,9 +8,10 @@ const Styles = styled.div`
     background: url(${boatImage}) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
-    height: 400px;
+    height: 500px;
     position: relative;
     z-index: -2;
+    padding-top: 200px;
   }
 
   .overlay {
@@ -30,7 +31,17 @@ export const Jumbotron = () => (
     <Jumbo fluid className="jumbo">
       <div className="overlay"></div>
       <Container>
-        <h1>Robles Identity</h1>
+        <div className="TextoFixo">
+          <h1 className="blink_me">
+          &#8220; DESIGN CRIA CULTURA
+          </h1>
+          <h1 className="blink_me">
+            CULTURA MOLDA VALORES
+          </h1>
+          <h1 className="blink_me">
+            VALORES DETERMINAM O FUTURO &#8220;
+          </h1>
+        </div>
       </Container>
     </Jumbo>
   </Styles>

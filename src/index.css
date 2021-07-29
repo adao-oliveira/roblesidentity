@@ -12,3 +12,132 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------
+-------------------------------------------ANIMACAO DA LOGO------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+*/
+
+.overlay:hover
+{
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.logo:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------
+-------------------------------------------ANIMACAO NEON DA PAGINA HOME------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+*/
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+  
+  @keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+  }
+
+  .blink_me {
+    font-size: 20px;
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon: #ff66e2;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+  
+  @keyframes blinker {  
+    50% { opacity: 0; }
+  }
+
+  /*FIXANDO O TEXTO NEON NA PAGINA HOME*/
+
+  .TextoFixo {
+      color: #ff66e2;
+    display: block;
+    height: 500px;
+    line-height: 10px;
+    text-align: center;
+  }
