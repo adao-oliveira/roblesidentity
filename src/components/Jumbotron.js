@@ -32,17 +32,17 @@ export const Jumbotron = () => (
       <div className="overlay"></div>
       <Container>
         <div className="textNeon">
-          <h1 className="blink_me mt-16" style={{fontSize: '40px'}}>
+          <h1 className="blink_me mt-16" style={{ fontSize: '40px' }}>
             <Typical
-            loop={Infinity}
-            steps={[
-            '❝ DESIGN CRIA CULTURA,',
-            1000,
-            'CULTURA MOLDA VALORES,',
-            1000,
-            'VALORES DETERMINAM O FUTURO ❝',
-            1000
-          ]}
+              loop={Infinity}
+              steps={[
+                '❝ DESIGN CRIA CULTURA,',
+                1000,
+                'CULTURA MOLDA VALORES,',
+                1000,
+                'VALORES DETERMINAM O FUTURO ❝',
+                1000
+              ]}
             />
           </h1>
         </div>
