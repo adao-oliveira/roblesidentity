@@ -6,16 +6,17 @@ export const Servicos = () => (
     <main className="l-main">
       {/* <!--===== SERVICOS =====--> */}
 
+      <div className="fundo">
       <section className="skills section" id="skills">
         <ScrollAnimation animateIn='afterAnimatedIn'>
-          <h2 className="section-title">Nossos Serviços</h2>
+          <h2 className="section-title text-white">Nossos Serviços</h2>
         </ScrollAnimation>
         <div className="skills__container bd-grid">
           <div className="skills__box">
             <h3 className="skills__subtitle">Desenvolvimento</h3>
-            <span className="skills__name">Javascript</span>
-            <span className="skills__name">React.js</span>
-            <span className="skills__name">Next.js</span>
+            <span className="skills__name">Javascript<img src="https://img.icons8.com/nolan/48/javascript.png"/></span>
+            <span className="skills__name">React.js<img src="https://img.icons8.com/nolan/48/react-native.png"/></span>
+            <span className="skills__name">Next.js<img style={{height: '48px'}} src="https://www.creative-tim.com/learning-lab/assets/images/nextjs.png"/></span>
 
             <h3 className="skills__subtitle">Design</h3>
             <span className="skills__name">Figma</span>
@@ -28,6 +29,7 @@ export const Servicos = () => (
           </div>
         </div>
       </section>
+      </div>
 
 
       {/* <!--===== CONTATO =====--> */}

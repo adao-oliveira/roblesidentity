@@ -1,11 +1,11 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import boatImage from '../assets/boatImage.jpg';
+import Typical from 'react-typical';
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${boatImage}) no-repeat fixed bottom;
+    background: url('') no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
     height: 500px;
@@ -31,15 +31,19 @@ export const Jumbotron = () => (
     <Jumbo fluid className="jumbo">
       <div className="overlay"></div>
       <Container>
-        <div className="TextoFixo">
-          <h1 className="blink_me">
-          &#8220; DESIGN CRIA CULTURA
-          </h1>
-          <h1 className="blink_me">
-            CULTURA MOLDA VALORES
-          </h1>
-          <h1 className="blink_me">
-            VALORES DETERMINAM O FUTURO &#8220;
+        <div className="textNeon">
+          <h1 className="blink_me mt-16" style={{fontSize: '40px'}}>
+            <Typical
+            loop={Infinity}
+            steps={[
+            '❝ DESIGN CRIA CULTURA,',
+            1000,
+            'CULTURA MOLDA VALORES,',
+            1000,
+            'VALORES DETERMINAM O FUTURO ❝',
+            1000
+          ]}
+            />
           </h1>
         </div>
       </Container>
