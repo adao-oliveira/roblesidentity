@@ -1,7 +1,6 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import Typical from 'react-typical';
 
 const Styles = styled.div`
   .jumbo {
@@ -33,7 +32,7 @@ export const Jumbotron = () => (
       <Container>
         <div className="textNeon">
           <h1 className="blink_me mt-16" style={{ fontSize: '40px' }}>
-            <Typical
+            {/* <Typical
               loop={Infinity}
               steps={[
                 '❝ DESIGN CRIA CULTURA,',
@@ -43,7 +42,7 @@ export const Jumbotron = () => (
                 'VALORES DETERMINAM O FUTURO ❝',
                 1000
               ]}
-            />
+            /> */}
           </h1>
         </div>
       </Container>
