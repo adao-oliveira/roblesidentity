@@ -25,7 +25,7 @@ export const Servicos = () => (
           </div>
 
           <div className="skills__img">
-            <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627599894/skill_l5bhft.jpg" alt="" />
+            <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627948326/PicsArt_08-02-08.51.10_atg8fd.png" alt="" />
           </div>
         </div>
       </section>
