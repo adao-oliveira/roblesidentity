@@ -5,7 +5,7 @@ import Typical from 'react-typical';
 
 const Styles = styled.div`
   .jumbo {
-    background: url('') no-repeat fixed bottom;
+    background-image: url('https://res.cloudinary.com/robles-identity/image/upload/v1627935861/fundositeroblesidentity_rklylh.jpg');
     background-size: cover;
     color: #efefef;
     height: 500px;
