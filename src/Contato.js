@@ -2,29 +2,27 @@ import React from 'react'
 
 export const Contato = () => (
   <div>
-    <main>
-      {/* <!--===== CONTATO =====--> */}
-      <section className="contact section" id="contact">
-        <h2 className="section-title">Contato</h2>
+    {/* <!--===== CONTATO =====--> */}
+    <section class="form-section">
 
-        <div className="contact__container bd-grid">
-          <div className="contact__info">
-            <h3 className="contact__subtitle">EMAIL</h3>
-            <span className="contact__text">exemplo.gmail.com</span>
+      <div class="form-wrapper">
+        <form>
+          <div class="input-block">
+            <label for="login-email contact__subtitle">E-mail</label>
           </div>
 
-          <form action="" className="contact__form">
-            <div className="contact__inputs">
-              <input type="text" placeholder="Nome" className="contact__input" />
-              <input type="mail" placeholder="E-mail" className="contact__input" />
-            </div>
+          <div className="input-block">
+            <input type="text" placeholder="Nome" />
+            <input type="email" placeholder="E-mail" id="login-email" />
+          </div>
 
-            <textarea placeholder="Mensagem..." name="" id="" cols="0" rows="10" className="contact__input"></textarea>
+          <textarea placeholder="Mensagem..." name="" id="" cols="50" rows="10" className=" input-block"></textarea>
 
-            <input type="submit" value="Enviar" className="contact__button" style={{ backgroundColor: '#1d20ff' }} />
-          </form>
-        </div>
-      </section>
-    </main>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <ul class="squares"></ul>
   </div>
 )
