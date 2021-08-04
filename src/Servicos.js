@@ -7,56 +7,40 @@ export const Servicos = () => (
       {/* <!--===== SERVICOS =====--> */}
 
       <div className="fundo">
-      <section className="skills section" id="skills">
-        <ScrollAnimation animateIn='afterAnimatedIn'>
-          <h2 className="section-title text-white">Nossos Serviços</h2>
-        </ScrollAnimation>
-        <div className="skills__container bd-grid">
-          <div className="skills__box">
-            <h3 className="skills__subtitle">Desenvolvimento</h3>
-            <span className="skills__name">Javascript<img src="https://img.icons8.com/nolan/48/javascript.png"/></span>
-            <span className="skills__name">React.js<img src="https://img.icons8.com/nolan/48/react-native.png"/></span>
-            <span className="skills__name">Next.js<img style={{height: '48px'}} src="https://www.creative-tim.com/learning-lab/assets/images/nextjs.png"/></span>
-
-            <h3 className="skills__subtitle">Design</h3>
-            <span className="skills__name">Figma</span>
-            <span className="skills__name">Photoshop</span>
-            <span className="skills__name">Adobe XD</span>
-          </div>
-
-          <div className="skills__img">
-            <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627948326/PicsArt_08-02-08.51.10_atg8fd.png" alt="" />
-          </div>
-        </div>
-      </section>
-      </div>
-
-
-      {/* <!--===== CONTATO =====--> */}
-      <section className="contact section" id="contact">
-        <h2 className="section-title">Contato</h2>
-
-        <div className="contact__container bd-grid">
-          <div className="contact__info">
-            <h3 className="contact__subtitle">EMAIL</h3>
-            <span className="contact__text">exemplo.gmail.com</span>
-
-            <h3 className="contact__subtitle">Telefone</h3>
-            <span className="contact__text">(11) 99999999</span>
-          </div>
-
-          <form action="" className="contact__form">
-            <div className="contact__inputs">
-              <input type="text" placeholder="Nome" className="contact__input" />
-              <input type="mail" placeholder="E-mail" className="contact__input" />
+        {/* ADAO */}
+        <section className="skills section" id="skills">
+          <ScrollAnimation animateIn='afterAnimatedIn'>
+            <h2 className="section-title text-white">Nossos Serviços</h2>
+          </ScrollAnimation>
+          <div className="skills__container bd-grid">
+            <div className="skills__box">
+              <h3 className="skills__subtitle">Desenvolvimento</h3>
+              <span className="skills__name">Javascript<img src="https://img.icons8.com/nolan/48/javascript.png" /></span>
+              <span className="skills__name">React.js<img src="https://img.icons8.com/nolan/48/react-native.png" /></span>
+              <span className="skills__name">Next.js<img style={{ height: '48px' }} src="https://www.creative-tim.com/learning-lab/assets/images/nextjs.png" /></span>
             </div>
 
-            <textarea placeholder="Mensagem..." name="" id="" cols="0" rows="10" className="contact__input"></textarea>
+            <div className="skills__img">
+              <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627948326/PicsArt_08-02-08.51.10_atg8fd.png" alt="" />
+            </div>
+          </div>
+        </section>
+        {/* JULIANA */}
+        <section className="skills section -mt-32" id="skills">
+          <div className="skills__container bd-grid">
+            <div className="skills__img ">
+              <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627949836/PicsArt_08-02-09.16.51_veqw2j.png" alt="" />
+            </div>
+            <div className="skills__box">
+              <h3 className="skills__subtitle">Design</h3>
+              <span className="skills__name">Photoshop<img src="https://img.icons8.com/nolan/48/adobe-photoshop.png" /></span>
+              <span className="skills__name">PhotoScape<img style={{ height: '48px' }} src="https://img2.gratispng.com/20180404/pvw/kisspng-photoscape-image-editing-computer-software-photoscape-effects-5ac48dd55dcba3.7133507615228308053842.jpg" /></span>
+              <span className="skills__name">Canva<img style={{ height: '48px' }} src="https://img.apksum.com/c0/com.canva.editor/2.76.0/icon.png" /></span>
+            </div>
 
-            <input type="submit" value="Enviar" className="contact__button" style={{backgroundColor: '#1d20ff'}} />
-          </form>
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
     </main>
   </div>
 )

@@ -315,6 +315,7 @@ img{
 .skills__subtitle{
     color: var(--first-color);
     margin-bottom: var(--mb-3);
+    font-size: 30px;
 }
 .skills__name{
     display: inline-block;
