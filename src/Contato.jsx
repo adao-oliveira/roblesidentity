@@ -65,7 +65,6 @@ export const Contato = () => {
 
   .AvaliacaoStyle {
     text-align: center;
-    padding: 10px 30px 0 0;
   }
   
   h1 {
