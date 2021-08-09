@@ -1,5 +1,57 @@
 import React from 'react';
 import emailjs from "emailjs-com";
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Rating from '@material-ui/lab/Rating';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
+import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
+import SentimentSatisfiedIcon from '@material-ui/icons/SentimentSatisfied';
+import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAltOutlined';
+import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfied';
+import Box from '@material-ui/core/Box';
+
+
+const StyledRating = withStyles({
+  iconFilled: {
+    color: '#ff3d47',
+  },
+  iconHover: {
+    color: '#ff6d75',
+  },
+})(Rating);
+
+const customIcons = {
+  1: {
+    icon: <SentimentVeryDissatisfiedIcon />,
+    label: 'Very Dissatisfied',
+  },
+  2: {
+    icon: <SentimentDissatisfiedIcon />,
+    label: 'Dissatisfied',
+  },
+  3: {
+    icon: <SentimentSatisfiedIcon />,
+    label: 'Neutral',
+  },
+  4: {
+    icon: <SentimentSatisfiedAltIcon />,
+    label: 'Satisfied',
+  },
+  5: {
+    icon: <SentimentVerySatisfiedIcon />,
+    label: 'Very Satisfied',
+  },
+};
+
+function IconContainer(props) {
+  const { value, ...other } = props;
+  return <span {...other}>{customIcons[value].icon}</span>;
+}
+
+IconContainer.propTypes = {
+  value: PropTypes.number.isRequired,
+};
 
 function sendEmail(e) {
   e.preventDefault();
@@ -39,6 +91,16 @@ export const Contato = () => {
             </div>
             <button type='submit' className="btn-enviar">Enviar Mensagem</button>
           </form>
+
+          <Box component="fieldset" borderColor="transparent">
+            <h1 component="legend">Já nos conhece? Avalia-nos 💕</h1>
+            <StyledRating
+              name="customized-color"
+              defaultValue={2}
+              getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+              icon={<FavoriteIcon style={{ fontSize:'30px', margin:'20px 0 0 40px' }}/>}
+            />
+          </Box>
         </div>
       </section>
 
