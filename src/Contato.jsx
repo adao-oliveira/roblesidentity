@@ -19,7 +19,7 @@ export const Contato = () => {
   return (
     <>
       <section className="form-section">
-        <h1>Entre em contato 😉</h1>
+        <h1 className="mt-4">Entre em contato 😉</h1>
 
         <div className="form-wrapper">
           <form onSubmit={sendEmail}>

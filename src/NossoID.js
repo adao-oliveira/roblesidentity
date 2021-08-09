@@ -44,6 +44,7 @@ export const NossoID = () => (
 }
 .ID_text{
     margin-bottom: 2rem;
+    color: #fff;
 }
 
     `}</style>

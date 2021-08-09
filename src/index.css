@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://res.cloudinary.com/robles-identity/image/upload/v1627941549/PicsArt_08-02-06.58.50_qugfzr.jpg');
+  background-image: url('https://res.cloudinary.com/robles-identity/image/upload/v1627941549/PicsArt_08-02-06.58.50_qugfzr.jpg') !important;
 }
 
 code {
