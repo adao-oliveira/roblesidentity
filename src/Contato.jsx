@@ -93,7 +93,7 @@ export const Contato = () => {
           </form>
 
           <Box component="fieldset" borderColor="transparent">
-            <h1 component="legend">Já nos conhece? Avalia-nos 💕</h1>
+            <h1 component="legend"> Já nos conhece? Avalia-nos 💕</h1>
             <StyledRating
               name="customized-color"
               defaultValue={2}
