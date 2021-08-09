@@ -1,57 +1,7 @@
 import React from 'react';
 import emailjs from "emailjs-com";
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Rating from '@material-ui/lab/Rating';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
-import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
-import SentimentSatisfiedIcon from '@material-ui/icons/SentimentSatisfied';
-import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAltOutlined';
-import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfied';
-import Box from '@material-ui/core/Box';
+import { Rating } from 'semantic-ui-react'
 
-
-const StyledRating = withStyles({
-  iconFilled: {
-    color: '#ff3d47',
-  },
-  iconHover: {
-    color: '#ff6d75',
-  },
-})(Rating);
-
-const customIcons = {
-  1: {
-    icon: <SentimentVeryDissatisfiedIcon />,
-    label: 'Very Dissatisfied',
-  },
-  2: {
-    icon: <SentimentDissatisfiedIcon />,
-    label: 'Dissatisfied',
-  },
-  3: {
-    icon: <SentimentSatisfiedIcon />,
-    label: 'Neutral',
-  },
-  4: {
-    icon: <SentimentSatisfiedAltIcon />,
-    label: 'Satisfied',
-  },
-  5: {
-    icon: <SentimentVerySatisfiedIcon />,
-    label: 'Very Satisfied',
-  },
-};
-
-function IconContainer(props) {
-  const { value, ...other } = props;
-  return <span {...other}>{customIcons[value].icon}</span>;
-}
-
-IconContainer.propTypes = {
-  value: PropTypes.number.isRequired,
-};
 
 function sendEmail(e) {
   e.preventDefault();
@@ -92,15 +42,12 @@ export const Contato = () => {
             <button type='submit' className="btn-enviar">Enviar Mensagem</button>
           </form>
 
-          <Box component="fieldset" borderColor="transparent">
-            <h1 component="legend"> Já nos conhece? Avalia-nos 💕</h1>
-            <StyledRating
-              name="customized-color"
-              defaultValue={2}
-              getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
-              icon={<FavoriteIcon style={{ fontSize:'30px', margin:'20px 0 0 40px' }}/>}
-            />
-          </Box>
+          <h1> Já nos conhece? Avalia-nos 💕</h1>
+          <div className="AvaliacaoStyle">
+            <Rating icon='heart' defaultRating={2} maxRating={5} size='massive' />
+          </div>
+          <button type='submit' className="btn-enviar mt-4">Enviar Avaliação</button>
+
         </div>
       </section>
 
@@ -114,6 +61,11 @@ export const Contato = () => {
     align-items: center;
     background:  linear-gradient( 45deg, red, blue );
     padding-bottom: 50px;
+  }
+
+  .AvaliacaoStyle {
+    text-align: center;
+    padding: 10px 30px 0 0;
   }
   
   h1 {
@@ -167,7 +119,7 @@ export const Contato = () => {
     box-shadow: inset 9px 9px 19px #d9d9d9, inset -9px -9px 19px #ffffff;
   }
   
-  form .btn-enviar {
+.btn-enviar {
     display: block;
     min-width: 150px;
     border: none;
@@ -178,8 +130,8 @@ export const Contato = () => {
     padding: 7px;
   }
 
-  form .btn-enviar:hover {
-    color: #endregion
+.btn-enviar:hover {
+    background-color: rgb(231, 28, 147)
   }
 
   /* APARIÇÃO DO FORM */
