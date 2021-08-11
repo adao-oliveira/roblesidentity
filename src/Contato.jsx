@@ -130,7 +130,7 @@ export const Contato = () => {
   }
 
 .btn-enviar:hover {
-    background-color: rgb(231, 28, 147)
+    background-color: rgb(231, 28, 147);
   }
 
   /* APARIÇÃO DO FORM */
