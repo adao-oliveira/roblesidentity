@@ -3,10 +3,22 @@ import emailjs from "emailjs-com";
 import { Rating } from 'semantic-ui-react'
 
 
-function sendEmail(e) {
+function sendEmailContato(e) {
   e.preventDefault();
 
-  emailjs.sendForm('default_service', 'template_0gx11f8', e.target, 'user_VqAgkVtnF9Zj7pBBYzQLF')
+  emailjs.sendForm('default_service', 'template_e1l0srj', e.target, 'user_MItfXJG0w5itx4lmcFISX')
+    .then((result) => {
+      alert("E-mail enviado com sucesso");
+    }, (error) => {
+      alert("Ocorreu um erro inesperado, verifique os dados e tente novamente!");
+    });
+  e.target.reset()
+}
+
+function sendEmailAvaliacao(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('default_service', 'template_ggs0fdp', e.target, 'user_MItfXJG0w5itx4lmcFISX')
     .then((result) => {
       alert("E-mail enviado com sucesso");
     }, (error) => {
@@ -22,7 +34,7 @@ export const Contato = () => {
         <h1 className="mt-4">Entre em contato 😉</h1>
 
         <div className="form-wrapper">
-          <form onSubmit={sendEmail}>
+          <form onSubmit={sendEmailContato}>
             <div className="input-block">
               <label htmlFor='for'>Nome completo</label>
               <input type='nome' name="from_name" id="from_name" required />
@@ -41,14 +53,24 @@ export const Contato = () => {
             </div>
             <button type='submit' className="btn-enviar">Enviar Mensagem</button>
           </form>
+        </div>
 
+        <form onSubmit={sendEmailAvaliacao}>
           <h1> Já nos conhece? Avalia-nos 💕</h1>
           <div className="AvaliacaoStyle">
-            <Rating icon='heart' defaultRating={2} maxRating={5} size='massive' />
+            <div name="mensagem" id="mensagem">
+              <Rating icon='heart' defaultRating={2} maxRating={5} size='massive' />
+            </div>
+            <div className="input-block">
+              <input type='nome' name="from_name" id="from_name" placeholder="Nome completo" required />
+            </div>
+            <div className="ComentarioAvaliacao">
+              <textarea type='assunto' className="form-control" rows="6" name="mensagem" id="mensagem" placeholder="Deixe um comentário 💕" required />
+            </div>
           </div>
           <button type='submit' className="btn-enviar mt-4">Enviar Avaliação</button>
+        </form>
 
-        </div>
       </section>
 
       <ul className="squares"></ul>
@@ -81,6 +103,27 @@ export const Contato = () => {
     background-color: white;
     padding: 30px 25px;
     border-radius: 5px;
+  }
+
+  .ComentarioAvaliacao{
+    margin: 20px 0;
+    padding: 0 25px;
+    border-radius: 5px;
+  }
+
+  .AvaliacaoStyle .input-block input{
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #1d20ff;
+    outline-color: #1d20ff;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: inset 9px 9px 19px #d9d9d9, inset -9px -9px 19px #ffffff;
   }
   
   .form-wrapper form .input-block {
@@ -133,90 +176,6 @@ export const Contato = () => {
     background-color: rgb(231, 28, 147);
   }
 
-  /* APARIÇÃO DO FORM */
-  .form-wrapper form {
-    overflow: hidden;
-    animation: fade 0.2s;
-  }
-  
-  .form-wrapper form .input-block,textarea:nth-child(1) {
-    animation: move 500ms;
-  }
-  
-  .form-wrapper form .input-block,textarea:nth-child(2) {
-    animation: move 400ms;
-    animation-delay: 100ms;
-    animation-fill-mode: backwards;
-  }
-  
-  .form-wrapper form .button {
-    animation: move 400ms;
-    animation-delay: 250ms;
-    animation-fill-mode: backwards;
-    cursor: pointer;
-  }
-  
-  .form-wrapper form .button:hover {
-    background-color:rgba(0, 187, 0, 0.748);
-  }
-  
-  @keyframes move {
-    from {
-      opacity: 0;
-      transform: translateX(-35%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  /* Quando clicar no botão, sumir com o form */
-  .form-hide {
-    animation: down 1.2s forwards;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  
-  @keyframes down {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(100vh);
-    }
-  }
-  
-  /* FORM NO-NO */
-  
-  form.validate-error {
-    animation: nono 200ms linear, fade paused;
-    animation-iteration-count: 2;
-  }
-  
-  @keyframes nono {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-    35% {
-      transform: translateX(-15%);
-    }
-    70% {
-      transform: translateX(15%);
-    }
-  }
-  }
 `}</style>
 
     </>

@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <Nav>
       {/* DESKTOP */}
-      <div className="logo">
+      <div className="zoom">
         <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
           <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627494988/1627494925392_uxgjwy.png" className="logo" alt="Robles Identity"
             style={{
@@ -31,7 +31,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* MOBILE */}
-      <div className="logo">
+      <div className="zoom">
         <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
           <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627494988/1627494925392_uxgjwy.png" className="logo" alt="Robles Identity"
             style={{
