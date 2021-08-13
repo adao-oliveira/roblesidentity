@@ -18,7 +18,7 @@ export const Home = () => (
         <div className="card-right">
           <div className="Sobre_Text text-white">
             <ScrollAnimation animateIn='animate__lightSpeedInLeft'>
-              <p style={{ color: 'rgb(231, 28, 147)' }}>ORIGEM DO NOME</p>
+              <h1 style={{ color: 'rgb(231, 28, 147)' }}>ORIGEM DO NOME</h1>
             </ScrollAnimation>
             <ScrollAnimation animateIn='animate__backInLeft'>
               <p>
@@ -31,14 +31,14 @@ export const Home = () => (
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='animate__lightSpeedInLeft'>
-              <p style={{ color: 'rgb(231, 28, 147)' }}>NOSSA PROPOSTA</p>
+              <h1 style={{ color: 'rgb(231, 28, 147)' }}>NOSSA PROPOSTA</h1>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='animate__backInLeft'>
               <p>
                 A base do crescimento ou a realização de um projeto é o reconhecimento. Para ser reconhecido, primeiro você precisa ser lembrado visualmente,
                 para isso na criação de um projeto as empresas renomadas estabelecem cores padrões que retratam seus valores, princípios e símbolos,
-                que juntos formam toda a estrutura da sua logotipo\logomarca por exemplo.
+                que juntos formam toda a estrutura da sua logotipo/logomarca por exemplo.
               </p>
 
               <p>

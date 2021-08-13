@@ -49,7 +49,7 @@ export const Contato = () => {
             </div>
             <div className="input-block">
               <label htmlFor='for'>Assunto...</label>
-              <textarea type='assunto' className="form-control" rows="6" name="mensagem" id="mensagem" required />
+              <textarea type='assunto' className="form-control" rows="6" name="message" id="message" required />
             </div>
             <button type='submit' className="btn-enviar">Enviar Mensagem</button>
           </form>
@@ -58,14 +58,14 @@ export const Contato = () => {
         <form onSubmit={sendEmailAvaliacao}>
           <h1> Já nos conhece? Avalia-nos 💕</h1>
           <div className="AvaliacaoStyle">
-            <div name="mensagem" id="mensagem">
+            <div name="message" id="message">
               <Rating icon='heart' defaultRating={2} maxRating={5} size='massive' />
             </div>
             <div className="input-block">
               <input type='nome' name="from_name" id="from_name" placeholder="Nome completo" required />
             </div>
             <div className="ComentarioAvaliacao">
-              <textarea type='assunto' className="form-control" rows="6" name="mensagem" id="mensagem" placeholder="Deixe um comentário 💕" required />
+              <textarea type='assunto' className="form-control" rows="6" name="message" id="message" placeholder="Deixe um comentário 💕" required />
             </div>
           </div>
           <button type='submit' className="btn-enviar mt-4">Enviar Avaliação</button>
