@@ -1,24 +1,10 @@
 import React from 'react';
 import emailjs from "emailjs-com";
-import { Rating } from 'semantic-ui-react'
-
 
 function sendEmailContato(e) {
   e.preventDefault();
 
   emailjs.sendForm('default_service', 'template_e1l0srj', e.target, 'user_MItfXJG0w5itx4lmcFISX')
-    .then((result) => {
-      alert("E-mail enviado com sucesso");
-    }, (error) => {
-      alert("Ocorreu um erro inesperado, verifique os dados e tente novamente!");
-    });
-  e.target.reset()
-}
-
-function sendEmailAvaliacao(e) {
-  e.preventDefault();
-
-  emailjs.sendForm('default_service', 'template_ggs0fdp', e.target, 'user_MItfXJG0w5itx4lmcFISX')
     .then((result) => {
       alert("E-mail enviado com sucesso");
     }, (error) => {
@@ -54,23 +40,6 @@ export const Contato = () => {
             <button type='submit' className="btn-enviar">Enviar Mensagem</button>
           </form>
         </div>
-
-        <form onSubmit={sendEmailAvaliacao}>
-          <h1> Já nos conhece? Avalia-nos 💕</h1>
-          <div className="AvaliacaoStyle">
-            <div name="message" id="message">
-              <Rating icon='heart' defaultRating={2} maxRating={5} size='massive' />
-            </div>
-            <div className="input-block">
-              <input type='nome' name="from_name" id="from_name" placeholder="Nome completo" required />
-            </div>
-            <div className="ComentarioAvaliacao">
-              <textarea type='assunto' className="form-control" rows="6" name="message" id="message" placeholder="Deixe um comentário 💕" required />
-            </div>
-          </div>
-          <button type='submit' className="btn-enviar mt-4">Enviar Avaliação</button>
-        </form>
-
       </section>
 
       <ul className="squares"></ul>

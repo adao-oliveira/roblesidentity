@@ -4,7 +4,7 @@ import { Home } from './Home';
 import { Servicos } from './Servicos';
 import { Contato } from './Contato';
 import { NossoID } from './NossoID';
-import { Seuprojeto } from './Seuprojeto';
+import { Feedback } from './Feedback';
 import { Layout } from './components/Layout';
 import Navbar from './components/Navbar';
 import { Jumbotron } from './components/Jumbotron';
@@ -22,7 +22,7 @@ class App extends Component {
               <Route path="/NossoID" component={NossoID} />
               <Route path="/Contato" component={Contato} />
               <Route path="/servicos" component={Servicos} />
-              <Route path="/Seuprojeto" component={Seuprojeto} />
+              <Route path="/Feedback" component={Feedback} />
             </Switch>
           </Layout>
         </Router>

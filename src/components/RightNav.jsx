@@ -38,7 +38,7 @@ const RightNav = ({ open }) => {
       <Link to="/NossoID" style={{color: 'white', textDecoration: 'none'}}><li>Nosso ID</li></Link>
       <Link to="/contato" style={{color: 'white', textDecoration: 'none'}}><li>Contato</li></Link>
       <Link to="/servicos" style={{color: 'white', textDecoration: 'none'}}><li>Nossos serviços</li></Link>
-      <Link to="/Seuprojeto" style={{color: 'white', textDecoration: 'none'}}><li>Desenvolva seu projeto</li></Link>
+      <Link to="/Feedback" style={{color: 'white', textDecoration: 'none'}}><li>Feedback</li></Link>
     </Ul>
   )
 }
