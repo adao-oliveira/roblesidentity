@@ -16,32 +16,40 @@ function sendEmailAvaliacao(e) {
 
 export const Feedback = () => (
   <>
-    <section className="form-section">
-      <h1> Já nos conhece? Avalia-nos 💕</h1>
+    <div className="fundo">
 
-      <div className="form-wrapper">
-        <form onSubmit={sendEmailAvaliacao}>
-          <div style={{textAlign: 'center'}} name="message" id="message">
-            <Rating icon='heart' defaultRating={2} maxRating={5} size='massive' />
-          </div>
-          <div className="input-block">
-            <input type='nome' name="from_name" id="from_name" placeholder="Nome completo" required />
-          </div>
-          <div className="input-block">
-            <textarea type='assunto' className="form-control" rows="6" name="message" id="message" placeholder="Deixe um comentário 💕" required />
-          </div>
-          <button type='submit' className="btn-enviar mt-4">Enviar Avaliação</button>
-        </form>
-      </div>
-    </section>
+      <section className="form-section">
+        <h1> Já nos conhece? Avalia-nos 💕</h1>
 
+        <div className="form-wrapper">
+          <form onSubmit={sendEmailAvaliacao}>
+            <div style={{ textAlign: 'center' }} name="message" id="message">
+              <Rating icon='heart' defaultRating={2} maxRating={5} size='massive' />
+            </div>
+            <div className="input-block">
+              <input type='nome' name="from_name" id="from_name" placeholder="Nome completo" required />
+            </div>
+            <div className="input-block">
+              <textarea type='assunto' className="form-control" rows="6" name="message" id="message" placeholder="Deixe um comentário 💕" required />
+            </div>
+            <button type='submit' className="btn-enviar mt-4">Enviar Avaliação</button>
+          </form>
+        </div>
+      </section>
+    </div>
     <style jsx>{`
+
+.fundo{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0, #120c56, #000000);
+}
+
     section {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background:  linear-gradient( 45deg, red, blue );
       padding-bottom: 50px;
     }
     

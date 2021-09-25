@@ -24,6 +24,10 @@ export const NossoID = () => (
 
         <style jsx>{`
 
+.section {
+    background: linear-gradient(0, #120c56, #000000);
+}
+
 .ID_container{
     justify-items: center;
     row-gap: 2rem;

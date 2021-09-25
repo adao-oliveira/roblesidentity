@@ -50,7 +50,7 @@ export const Contato = () => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:  linear-gradient( 45deg, red, blue );
+    background: linear-gradient(0, #120c56, #000000);
     padding-bottom: 50px;
   }
 

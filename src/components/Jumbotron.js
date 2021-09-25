@@ -8,7 +8,7 @@ const Styles = styled.div`
     background-image: url('https://res.cloudinary.com/robles-identity/image/upload/v1627935861/fundositeroblesidentity_rklylh.jpg');
     background-size: cover;
     color: #efefef;
-    height: 500px;
+    height: 100%;
     position: relative;
     z-index: -2;
     padding-top: 200px;

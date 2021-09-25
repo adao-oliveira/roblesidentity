@@ -62,6 +62,10 @@ export const Servicos = () => (
 
     <style jsx>{`
 
+.l-main {
+  background: linear-gradient(0, #120c56, #000000);
+}
+
 .habilidades_container{
   row-gap: 2rem;
 }
@@ -78,6 +82,7 @@ export const Servicos = () => (
   margin-bottom: 1.5rem;
   padding: .25rem .5rem;
   border-radius: .25rem;
+  color: #fff;
 }
 .Habilidades_detalhes {
   margin-right: 1rem;

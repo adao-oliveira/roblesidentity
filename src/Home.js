@@ -63,9 +63,9 @@ export const Home = () => (
               </p>
             </ScrollAnimation>
           </div>
-          <div className="flex justify-center pb-10">
+          <div className="detalhe flex justify-center pb-10">
             <a href="/NossoID">
-              <button type="button" className="btn mt-4 text-white font-semibold">Saiba mais sobre nosso ID</button>
+              <button type="button" className="btn mt-4 text-white font-semibold" style={{backgroundColor:'rgb(231, 28, 147)'}}>&#123; Saiba mais sobre nosso ID &#125;</button>
             </a>
           </div>
         </div>
@@ -73,6 +73,10 @@ export const Home = () => (
     </main>
 
     <style jsx>{`
+
+main {
+  background: linear-gradient(0, #120c56, #000000);
+}
 
 .cards-container {
   text-align: center;
@@ -121,10 +125,6 @@ export const Home = () => (
   .card-left p , .card-right p {
     width: 90%;
     margin: 10px auto 20px auto;
-  }
-
-  .btn{
-    background-color: #0700e0;
   }
 
     `}</style>
