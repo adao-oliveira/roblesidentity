@@ -6,8 +6,8 @@ export const Home = () => (
     <main>
       <div className="text-center -mb-10">
         <ScrollAnimation animateIn='animate__zoomIn'>
-          <h2 className="text-white">Somos a
-            <h2 style={{ color: 'rgb(231, 28, 147)', display: 'inline', fontSize: '30px' }}> ROBLES IDENTITY</h2>
+          <h2 className="text-white" style={{fontSize:'20px'}}>Somos a
+            <h2 style={{ color: '#ff65c3', display: 'inline', fontSize: '30px' }}> ROBLES IDENTITY</h2>
           </h2>
         </ScrollAnimation>
       </div>
@@ -18,20 +18,20 @@ export const Home = () => (
         <div className="card-right">
           <div className="Sobre_Text text-white">
             <ScrollAnimation animateIn='animate__lightSpeedInLeft'>
-              <h1 style={{ color: 'rgb(231, 28, 147)' }}>ORIGEM DO NOME</h1>
+              <h1 style={{ color: '#ff65c3', fontSize: '30px' }}>ORIGEM DO NOME</h1>
             </ScrollAnimation>
             <ScrollAnimation animateIn='animate__backInLeft'>
               <p>
                 Nosso intuito desde o início foi juntar nossas habilidades para criar algo inovador que ajudasse as empresas e seus projetos a alavancarem de forma única.
                 O que define uma empresa com toda certeza é a sua identidade, e uma identidade é formada por características visuais e internas, princípios e valores, por esse motivo escolhemos
-                o sobrenome<p style={{ color: 'rgb(231, 28, 147)', display: 'inline'}}> "ROBLES"</p> da Juliana,
-                a pessoa responsável pela idéia da empresa e pela parte visual da empresa e acrescentamos o <p style={{ color: 'rgb(231, 28, 147)', display: 'inline'}}> "IDENTITY"</p> que traduzindo 
-                do inglês para o português é <p style={{ color: 'rgb(231, 28, 147)', display: 'inline'}}> "IDENTIDADE"</p>.
+                o sobrenome<p style={{ color: '#ff65c3', display: 'inline'}}> "ROBLES"</p> da Juliana,
+                a pessoa responsável pela idéia da empresa e pela parte visual da empresa e acrescentamos o <p style={{ color: '#ff65c3', display: 'inline'}}> "IDENTITY"</p> que traduzindo 
+                do inglês para o português é <p style={{ color: '#ff65c3', display: 'inline'}}> "IDENTIDADE"</p>.
               </p>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='animate__lightSpeedInLeft'>
-              <h1 style={{ color: 'rgb(231, 28, 147)' }}>NOSSA PROPOSTA</h1>
+              <h1 style={{ color: '#ff65c3', fontSize: '30px' }}>NOSSA PROPOSTA</h1>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='animate__backInLeft'>
@@ -43,7 +43,7 @@ export const Home = () => (
 
               <p>
                 Sabemos que só cores, símbolos e logotipos não é o suficiente para alavancar uma empresa,
-                por isso, é importante a visibilidade no maior meio de comunicação que existe, a <p style={{ color: 'rgb(231, 28, 147)', display: 'inline'}}> INTERNET</p>, para isso nós contamos com o nosso programador e desenvolvedor de sites Adão Oliveira,
+                por isso, é importante a visibilidade no maior meio de comunicação que existe, a <p style={{ color: '#ff65c3', display: 'inline'}}> INTERNET</p>, para isso nós contamos com o nosso programador e desenvolvedor de sites Adão Oliveira,
                 para desenvolver do zero o site que irá promover a sua empresa e juntamente com a parte visual irão trazer a visibilidade da mesma.
               </p>
 
@@ -58,14 +58,14 @@ export const Home = () => (
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='animate__zoomIn'>
-              <p style={{ color: 'rgb(231, 28, 147)' }}>
+              <h1 style={{ color: '#ff65c3' }}>
                 NOSSO FOCO É TIRAR SEU PROJETO DO PAPEL E ALAVANCAR SUAS IDÉIAS
-              </p>
+              </h1>
             </ScrollAnimation>
           </div>
           <div className="detalhe flex justify-center pb-10">
             <a href="/NossoID">
-              <button type="button" className="btn mt-4 text-white font-semibold" style={{backgroundColor:'rgb(231, 28, 147)'}}>&#123; Saiba mais sobre nosso ID &#125;</button>
+              <button type="button" className="btn mt-4 text-white font-semibold" style={{backgroundColor:'#ff65c3'}}>&#123; Saiba mais sobre nosso ID &#125;</button>
             </a>
           </div>
         </div>
@@ -103,11 +103,11 @@ main {
 }
 
 .card-left {
-  border-right: 1px solid rgb(231, 28, 147);
+  border-right: 1px solid #ff65c3;
 }
 
 .card-right{
-  border-left: 1px solid rgb(231, 28, 147);
+  border-left: 1px solid #ff65c3;
 }
 
 

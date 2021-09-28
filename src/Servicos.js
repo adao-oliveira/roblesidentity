@@ -47,7 +47,7 @@ export const Servicos = () => (
                 <span className="habilidades_name">Canva<img style={{ height: '48px' }} src="https://img.apksum.com/c0/com.canva.editor/2.76.0/icon.png" /></span>
                 <span className="Habilidades_detalhes">
                   <h1 className="Aspas_Detalhe"></h1>
-                  <h1 className="Habilidades_detalhes" style={{ color: 'rgb(231, 28, 147)' }}>
+                  <h1 className="Habilidades_detalhes" style={{ color: '#ff65c3' }}>
                     Olá, meu nome é Juliana Robles,
                     faço parte do desenvolvimento da Robles Identity que visa gerar identidade ao seu projeto ou empresa.
                     Tomo conta de toda área de design, marketing, identidade visual e conteúdo.

@@ -41,7 +41,7 @@ export const Jumbotron = () => (
                 'CULTURA MOLDA VALORES,',
                 1000,
                 'VALORES DETERMINAM O FUTURO ❞',
-                1000
+                1000,
               ]}
             />
           </h1>

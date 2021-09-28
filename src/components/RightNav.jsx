@@ -8,6 +8,7 @@ const Ul = styled.ul`
   display: flex;
   color: #fff;
   flex-flow: row nowrap;
+  font-family: 'HighlandGothicFLF', sans-serif;
   li {
     padding: 18px 10px;
   }

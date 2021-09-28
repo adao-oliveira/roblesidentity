@@ -59,7 +59,6 @@ export const Feedback = () => (
       font-size: 20px;
       font-weight: 200;
       text-align: center;
-      font-family: 'Courier New', Courier, monospace;
     }
     
     .form-wrapper form {
@@ -82,7 +81,6 @@ export const Feedback = () => (
       width: 100%;
       margin-top: 8px;
       padding: 7px;
-      font-family: 'Courier New', Courier, monospace;
       font-size: 16px;
       color: #1d20ff;
       outline-color: #1d20ff;
@@ -94,7 +92,6 @@ export const Feedback = () => (
     }
   
     textarea {
-      font-family: 'Courier New', Courier, monospace;
       min-width: 30vw;
       margin: 10px auto;
       padding: 20px;
@@ -116,7 +113,7 @@ export const Feedback = () => (
     }
   
   .btn-enviar:hover {
-      background-color: rgb(231, 28, 147);
+      background-color: #ff65c3;
     }
 
 `}</style>

@@ -62,9 +62,7 @@ export const Contato = () => {
     margin-top: 40px;
     color: #fff;
     font-size: 20px;
-    font-weight: 200;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
   }
   
   .form-wrapper form {
@@ -84,7 +82,7 @@ export const Contato = () => {
     width: 100%;
     margin-top: 8px;
     padding: 7px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'theboldfont';
     font-size: 16px;
     color: #1d20ff;
     outline-color: #1d20ff;
@@ -108,7 +106,7 @@ export const Contato = () => {
     width: 100%;
     margin-top: 8px;
     padding: 7px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'theboldfont';
     font-size: 16px;
     color: #1d20ff;
     outline-color: #1d20ff;
@@ -120,7 +118,7 @@ export const Contato = () => {
   }
 
   textarea {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'theboldfont';
     min-width: 30vw;
     margin: 10px auto;
     padding: 20px;
@@ -142,7 +140,7 @@ export const Contato = () => {
   }
 
 .btn-enviar:hover {
-    background-color: rgb(231, 28, 147);
+    background-color: #ff65c3;
   }
 
 `}</style>
