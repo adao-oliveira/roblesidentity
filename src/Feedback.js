@@ -19,7 +19,7 @@ export const Feedback = () => (
     <div className="fundo">
 
       <section className="form-section">
-        <h1> Já nos conhece? Avalia-nos 💕</h1>
+        <h1> Já nos conhece? Avalie-nos 💕</h1>
 
         <div className="form-wrapper">
           <form onSubmit={sendEmailAvaliacao}>

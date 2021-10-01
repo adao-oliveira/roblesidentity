@@ -6,8 +6,8 @@ export const NossoID = () => (
         <div>
             {/* <!--===== SOBRE =====--> */}
             <section className="about section" id="about">
-                <h2 className="section-title" style={{ color: '#ff65c3', fontSize: '20px', textAlign:'center' }}>
-                    Para nos conhecer é necessário saber do que é composta a nossa empresa desde internamente até a visibilidade externa.
+                <h2 className="section-title text-uppercase" style={{ color: '#1d20ff', fontSize: '20px', textAlign:'center' }}>
+                    Para nos conhecer é necessário saber do que é composta a nossa empresa desde internamente até a visibilidade externa
                 </h2>
                 <ScrollAnimation animateIn='fadeIn'>
                     <div className="ID_container bd-grid">
