@@ -37,7 +37,7 @@ export const Contato = () => {
               <label htmlFor='for'>Assunto...</label>
               <textarea type='assunto' className="form-control" rows="6" name="message" id="message" required />
             </div>
-            <button type='submit' className="btn-enviar">Enviar Mensagem</button>
+            <button type='submit' className="btn btn-enviar">Enviar Mensagem</button>
           </form>
         </div>
       </section>
@@ -61,13 +61,13 @@ export const Contato = () => {
   h1 {
     margin-top: 40px;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
   }
   
   .form-wrapper form {
     margin: 20px 0;
-    background-color: white;
+    background-color: #fff;
     padding: 30px 25px;
     border-radius: 5px;
   }
@@ -106,7 +106,6 @@ export const Contato = () => {
     width: 100%;
     margin-top: 8px;
     padding: 7px;
-    font-family: 'theboldfont';
     font-size: 16px;
     color: #1d20ff;
     outline-color: #1d20ff;
@@ -118,7 +117,6 @@ export const Contato = () => {
   }
 
   textarea {
-    font-family: 'theboldfont';
     min-width: 30vw;
     margin: 10px auto;
     padding: 20px;
@@ -133,7 +131,7 @@ export const Contato = () => {
     min-width: 150px;
     border: none;
     background-color: #1d20ff;
-    color: white;
+    color: #fff;
     border-radius: 25px;
     margin: auto;
     padding: 7px;

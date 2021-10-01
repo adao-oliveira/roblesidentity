@@ -32,7 +32,7 @@ export const Feedback = () => (
             <div className="input-block">
               <textarea type='assunto' className="form-control" rows="6" name="message" id="message" placeholder="Deixe um comentário 💕" required />
             </div>
-            <button type='submit' className="btn-enviar mt-4">Enviar Avaliação</button>
+            <button type='submit' className="btn btn-enviar mt-4">Enviar Avaliação</button>
           </form>
         </div>
       </section>
@@ -56,14 +56,14 @@ export const Feedback = () => (
     h1 {
       padding-top: 40px;
       color: #fff;
-      font-size: 20px;
+      font-size: 30px;
       font-weight: 200;
       text-align: center;
     }
     
     .form-wrapper form {
       margin: 20px 0;
-      background-color: white;
+      background-color: #fff;
       padding: 30px 25px;
       border-radius: 5px;
     }
@@ -106,7 +106,7 @@ export const Feedback = () => (
       min-width: 150px;
       border: none;
       background-color: #1d20ff;
-      color: white;
+      color: #fff;
       border-radius: 25px;
       margin: auto;
       padding: 7px;
@@ -114,6 +114,7 @@ export const Feedback = () => (
   
   .btn-enviar:hover {
       background-color: #ff65c3;
+      color: #fff;
     }
 
 `}</style>

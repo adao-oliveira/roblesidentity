@@ -3,17 +3,17 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 export const Home = () => (
   <>
-    <main>
+    <div className="main">
       <div className="text-center -mb-10">
         <ScrollAnimation animateIn='animate__zoomIn'>
-          <h2 className="text-white" style={{fontSize:'20px'}}>Somos a
+          <h2 className="text-white" style={{fontSize:'30px'}}>Somos a
             <h2 style={{ color: '#ff65c3', display: 'inline', fontSize: '30px' }}> ROBLES IDENTITY</h2>
           </h2>
         </ScrollAnimation>
       </div>
       <div className="cards-container">
         <div className="card-left">
-          <img src="https://res.cloudinary.com/robles-identity/image/upload/v1628705467/Desenv_g3im7p.jpg" />
+          <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627523061/1627441762764_copy_1280x1280_ndb4xv.png" />
         </div>
         <div className="card-right">
           <div className="Sobre_Text text-white">
@@ -70,11 +70,11 @@ export const Home = () => (
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
     <style jsx>{`
 
-main {
+.main {
   background: linear-gradient(0, #120c56, #000000);
 }
 

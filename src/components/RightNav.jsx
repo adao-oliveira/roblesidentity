@@ -8,7 +8,8 @@ const Ul = styled.ul`
   display: flex;
   color: #fff;
   flex-flow: row nowrap;
-  font-family: 'HighlandGothicFLF', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
   li {
     padding: 18px 10px;
   }
@@ -35,11 +36,11 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <Link to="/" style={{color: 'white', textDecoration: 'none'}}><li>Home</li></Link>
-      <Link to="/NossoID" style={{color: 'white', textDecoration: 'none'}}><li>Nosso ID</li></Link>
-      <Link to="/contato" style={{color: 'white', textDecoration: 'none'}}><li>Contato</li></Link>
-      <Link to="/servicos" style={{color: 'white', textDecoration: 'none'}}><li>Nossos serviços</li></Link>
-      <Link to="/Feedback" style={{color: 'white', textDecoration: 'none'}}><li>Feedback</li></Link>
+      <Link to="/" style={{color: '#fff', textDecoration: 'none'}}><li>Home</li></Link>
+      <Link to="/NossoID" style={{color: '#fff', textDecoration: 'none'}}><li>Nosso ID</li></Link>
+      <Link to="/contato" style={{color: '#fff', textDecoration: 'none'}}><li>Contato</li></Link>
+      <Link to="/servicos" style={{color: '#fff', textDecoration: 'none'}}><li>Nossos serviços</li></Link>
+      <Link to="/Feedback" style={{color: '#fff', textDecoration: 'none'}}><li>Feedback</li></Link>
     </Ul>
   )
 }

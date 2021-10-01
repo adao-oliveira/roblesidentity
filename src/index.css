@@ -144,26 +144,16 @@ body {
   CONTEUDO PARA TODA A PAGINA
   */
 
-  h1, h2, h3, .copyright {
-    font-family: 'Facile Sans', sans-serif;
-}
+  h1, h2, h3, label, .btn {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
   h4, h5, h6, button, .btn {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  p {
-    font-family: theboldfont;
+  p, input {
+    font-family: 'Noto Sans Display', sans-serif;
   }
   
-  @font-face {
-    font-family: "Garamond";
-    src: url("/public/webfonts/Garamond.ttf");
-  }
-
-  @font-face {
-    font-family: "theboldfont";
-    src: url("/public/webfonts/theboldfont.ttf");
-  }
-
 /*===== BASE =====*/
 *,::before,::after{
     box-sizing: border-box;
