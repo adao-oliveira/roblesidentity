@@ -33,7 +33,7 @@ export const NossoID = () => (
                             <p className="ID_text">
                                 Em todas os comunicados e até mesmo no desenvolvimento do site da ROBLES IDENTITY, nós usamos 3 fontes padrões, específicas para cada proposta. A fontes escolhidas por nós definem exatamente quem
                                 somos.
-                                - A fonte ** representa uma proposta mais séria e moderna, algo mais padrão social.
+                                - A fonte <span className="text-uppercase text-inline" style={{display: 'inline', color: '#1d20ff', fontFamily:'Roboto Condensed'}}>" Noto Sans Display "</span> representa uma proposta mais séria e moderna, algo mais padrão social.
                                 - A fonte ** representa uma modernidade mais juvial, algo mais divertido e atualizado, que também definem a inovação e a evolução.
                                 - A fonte ** representa essas duas características as anteriores que unidas, trazem uma proposta de identidade única, podendo ter uma identidade juvial, atualizada mas ao mesmo tempo também moderna e
                                 sofisticada.
@@ -48,7 +48,7 @@ export const NossoID = () => (
                             </p>
 
 
-                            <h1 style={{ color: '#ff65c3', fontSize: '30px' }}>Princípios e Valores:</h1>
+                            <h1 style={{ color: '#ff65c3', fontSize: '30px' }}>PRINCÍPIOS E VALORES:</h1>
 
                             <p className="ID_text">
                                 A idéia da ROBLES IDENTITY surgiu desde muito tempo atrás, quando ambos os fundadores trabalhavam de forma autônoma desenvolvendo idéias para clientes internos.
