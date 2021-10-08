@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 const NavStyles = styled.nav`
+  border-bottom: 2px solid #0700e0;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0 20px;
   background: var(--dark-bg);
   ul {
     max-width: 1200px;
@@ -20,6 +23,7 @@ const NavStyles = styled.nav`
       display: inline-block;
       border-radius: 8px;
       transition: 0.3s ease background-color;
+      margin-top: 5%;
       &:hover {
         background-color: var(--deep-dark);
       }
@@ -44,6 +48,7 @@ const NavStyles = styled.nav`
     cursor: pointer;
     display: none;
     outline: none;
+    margin-top: 8%;
     * {
       pointer-events: none;
     }
@@ -58,6 +63,9 @@ const NavStyles = styled.nav`
     }
     .mobile-menu-icon {
       display: block;
+    }
+    .logo {
+      width: 80%;
     }
     .navItems {
       --top: 1rem;
@@ -85,6 +93,17 @@ const NavStyles = styled.nav`
       }
     }
   }
+  .zoom img {
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 `;
 
 export default function NavMenu() {
@@ -99,6 +118,28 @@ export default function NavMenu() {
         tabIndex={0}
       >
         <MdMenu />
+      </div>
+
+      {/* DESKTOP */}
+      <div className="zoom">
+        <Link to="/" style={{ color: '#fff', textDecoration: 'none' }}>
+          <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627494988/1627494925392_uxgjwy.png" className="logo" alt="Robles Identity"
+            style={{
+              marginTop: '8px'
+            }}
+          />
+        </Link>
+      </div>
+      {/* MOBILE */}
+      <div className="zoom">
+        <Link to="/" style={{ color: '#fff', textDecoration: 'none' }}>
+          <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627494988/1627494925392_uxgjwy.png" className="logo" alt="Robles Identity"
+            style={{
+              marginTop: '8px',
+              display: "none"
+            }}
+          />
+        </Link>
       </div>
 
       <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
