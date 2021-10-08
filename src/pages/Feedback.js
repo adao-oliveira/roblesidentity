@@ -14,7 +14,8 @@ function sendEmailAvaliacao(e) {
   e.target.reset()
 }
 
-export const Feedback = () => (
+export default function Feedback() {
+  return (
   <>
     <div className="fundo">
 
@@ -120,5 +121,5 @@ export const Feedback = () => (
 `}</style>
 
   </>
-
-)
+  );
+}

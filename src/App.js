@@ -1,34 +1,39 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './Home';
-import { Servicos } from './Servicos';
-import { Contato } from './Contato';
-import { NossoID } from './NossoID';
-import { Feedback } from './Feedback';
-import { Layout } from './components/Layout';
-import Navbar from './components/Navbar';
-import { Jumbotron } from './components/Jumbotron';
+import Footer from './components/Footer';
+import NavMenu from './components/NavMenu';
+import ScrollToTop from './components/ScrollToTop';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Feedback from './pages/Feedback';
 
-class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Router>
-          <Navbar />
-          <Jumbotron />
-          <Layout>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/NossoID" component={NossoID} />
-              <Route path="/Contato" component={Contato} />
-              <Route path="/servicos" component={Servicos} />
-              <Route path="/Feedback" component={Feedback} />
-            </Switch>
-          </Layout>
-        </Router>
-      </React.Fragment>
-    );
-  }
+export default function App() {
+  return (
+    <>
+      <Router>
+        <NavMenu />
+        <ScrollToTop />
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+          <Route path="/feedback">
+            <Feedback />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+    </>
+  );
 }
-
-export default App;
