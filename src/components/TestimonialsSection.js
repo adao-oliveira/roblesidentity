@@ -103,8 +103,8 @@ export default function TestimonialsSection() {
     <TestimonialSectionStyles>
       <div className="container">
         <SectionTitle
-          subheading="see what our clients say about us"
-          heading="Testimonials"
+          subheading="Veja o que nossos clientes dizem sobre nós"
+          heading="Depoimentos"
         />
         <div className="testimonial__wrapper">
           <SwitchTransition component={null}>

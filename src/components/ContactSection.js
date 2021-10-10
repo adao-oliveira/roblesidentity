@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdEmail, MdLocalPhone } from 'react-icons/md';
+import { MdEmail } from 'react-icons/md';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
 
@@ -47,6 +48,7 @@ h2{
     .left,
     .right {
       max-width: 100%;
+      padding: 4rem 2rem 2rem 2rem;
     }
     .right {
       padding: 4rem 2rem 2rem 2rem;
@@ -61,9 +63,9 @@ export default function ContactSection() {
         <h2>Entre em contato 😉</h2>
         <div className="contactSection__wrapper">
           <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+8801231" />
+            <a href="https://www.instagram.com/roblesidentity/"><ContactInfoItem icon={<FaInstagram />} text="@roblesidentity" /></a>
+            <a href="https://www.facebook.com/"><ContactInfoItem icon={<FaFacebook />} text="roblesidentity" /></a>
             <ContactInfoItem icon={<MdEmail />} text="roblesidentity@outlook.com" />
-            <ContactInfoItem text="Chittagong, Bangladesh" />
           </div>
           <div className="right">
             <ContactForm />

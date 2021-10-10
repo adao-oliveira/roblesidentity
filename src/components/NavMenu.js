@@ -33,7 +33,7 @@ const NavStyles = styled.nav`
       font-family: 'Roboto Condensed', sans-serif;
       padding: 1rem 2rem;
       font-size: 25px;
-      color: var(--gray-1);
+      color: var(--white);
       outline: none;
     }
     .active {

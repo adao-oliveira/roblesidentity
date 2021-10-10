@@ -10,12 +10,15 @@ const FooterStyle = styled.div`
     display: flex;
     gap: 3rem;
   }
+  h2 {
+    color: #1d20ff;
+    text-transform: uppercase;
+  }
   .footer__col1 {
     flex: 2;
   }
   .footer__col2,
-  .footer__col3,
-  .footer__col4 {
+  .footer__col3 {
     flex: 1;
   }
   .footer__col1__title {
@@ -24,7 +27,7 @@ const FooterStyle = styled.div`
   }
   .copyright {
     background-color: var(--dark-bg);
-    text-align: left;
+    text-align: center;
     padding: 1rem 0;
     margin-top: 5rem;
     .para {
@@ -35,6 +38,7 @@ const FooterStyle = styled.div`
     .container {
       flex-direction: column;
       gap: 0rem;
+      padding-left: 20px;
       & > div {
         margin-top: 5rem;
       }
@@ -55,13 +59,7 @@ const FooterStyle = styled.div`
 export default function Footer() {
   return (
     <FooterStyle>
-      <div className="container">
-        <div className="footer__col1">
-          <h1 className="footer__col1__title">Robles Identity</h1>
-          <PText>
-            Um web designer e desenvolvedor freelance de Chittagong, Bangladesh. Eu sempre crio sites com designs exclusivos e também com um bom índice de desempenho.
-          </PText>
-        </div>
+      <div className="container -mt-32">
         <div className="footer__col2">
           <FooterCol
             heading="Links Importantes"
@@ -96,34 +94,19 @@ export default function Footer() {
         </div>
         <div className="footer__col3">
           <FooterCol
-            heading="Informação de contato"
+            heading="Contatos"
             links={[
-              {
-                title: '+88012312',
-                path: 'tel:+88012312',
-              },
-              {
-                title: 'webcifar@gmail.com',
-                path: 'mailto:webcifar@gmail.com',
-              },
-            ]}
-          />
-        </div>
-        <div className="footer__col4">
-          <FooterCol
-            heading="Links sociais"
-            links={[
-              {
-                title: 'Facebook',
-                path: 'http://facebook.com',
-              },
-              {
-                title: 'Twitter',
-                path: 'http://twitter.com',
-              },
               {
                 title: 'Instagram',
-                path: 'http://instagram.com',
+                path: 'https://www.instagram.com/roblesidentity/',
+              },
+              {
+                title: 'Facebook',
+                path: 'https://www.facebook.com/',
+              },
+              {
+                title: 'E-mail',
+                path: 'mailto:roblesidentity@outlook.com',
               },
             ]}
           />

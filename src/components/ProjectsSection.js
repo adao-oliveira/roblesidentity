@@ -32,7 +32,7 @@ const ProjectSectionStyle = styled.div`
     left: auto;
     top: 0;
     transform: translateY(50%);
-    color: var(--gray-1);
+    color: var(--white);
     border-radius: 8px;
   }
   .swiper-button-next {

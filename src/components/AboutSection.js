@@ -5,12 +5,14 @@ import AboutImg from '../assets/images/about-sec-img.png';
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const AboutSectionStyles = styled.div`
-  padding: 10rem 0;
   .container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     text-align: left;
+    margin-top: -150px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .aboutSection__left,
   .aboutSection__right {

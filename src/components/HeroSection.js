@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.jpg';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
@@ -16,6 +15,7 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: -60px;
   }
   .hero__heading {
     font-size: 50px;
@@ -32,31 +32,33 @@ const HeroStyles = styled.div`
       display: inline;
     }
   }
+  .hero__info a {
+    color: #fff !important;
+    background-color: var(--gray-2);
+  }
   .hero__img {
     max-width: 900px;
     width: 100%;
     height: 600px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: -10rem;
   }
   .hero__social,
   .hero__scrollDown {
     display: flex;
+    position: fixed;
     flex-direction: column;
     gap: 2rem;
-    position: absolute;
-
-    bottom: 20px;
+    top: 350px;
     width: 50px;
   }
   .hero__social {
-    left: 50px;
+    left: 5px;
   }
   .hero__scrollDown {
-    right: 50px;
+    right: 5px;
   }
 
   .hero__social__indicator,
@@ -67,6 +69,7 @@ const HeroStyles = styled.div`
       transform: translateY(-70px) rotate(90deg);
       letter-spacing: 0.7rem;
       text-transform: uppercase;
+      color: red;
     }
     img {
       max-height: 45px;
@@ -91,6 +94,7 @@ const HeroStyles = styled.div`
           transform: rotate(-90deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
+          color: red;
         }
       }
     }
@@ -99,6 +103,7 @@ const HeroStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
+      margin-top: -100px;
     }
     .hero__heading {
       font-size: 30px;
@@ -111,7 +116,7 @@ const HeroStyles = styled.div`
       height: 300px;
     }
     .hero__info {
-      margin-top: 3rem;
+      margin-top: -10rem;
     }
     .hero__social {
       left: 0px;
@@ -154,7 +159,7 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <div className="hero__img">
-            <img src={HeroImg} alt="" />
+            <img src="https://res.cloudinary.com/robles-identity/image/upload/v1633872987/PicsArt_10-10-10.35.51_zs3f7v.jpg" alt="" />
           </div>
           <div className="hero__info">
             <PText>
@@ -174,7 +179,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="http://facebook.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -183,7 +188,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
+                    href="http://twitter.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -192,7 +197,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://isntagram.com/web_cifar"
+                    href="http://isntagram.com/"
                     target="_blank"
                     rel="noreferrer"
                   >

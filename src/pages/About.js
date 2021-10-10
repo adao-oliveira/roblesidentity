@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
-
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .top-section {
     display: flex;
     align-items: center;
@@ -20,6 +22,8 @@ const AboutPageStyles = styled.div`
   }
   .right {
     flex: 2;
+    margin-top: -50px;
+    margin-bottom: -100px;
   }
   .about__subheading {
     font-size: 2.2rem;
@@ -77,11 +81,12 @@ export default function About() {
   return (
     <>
       <AboutPageStyles>
-        <div className="container">
+        <div className="container mt-32">
           <div className="top-section">
             <div className="left">
-              <p className="about__subheading text-center" style={{fontSize:'35px'}}>
-                Olá, somos a <span>ROBLES IDENTITY</span>
+              <p className="about__subheading text-center" style={{ fontSize: '35px' }}>
+                Olá, somos a
+                <br /><span>ROBLES IDENTITY</span>
               </p>
               <h2 className="about__heading text-uppercase" style={{ color: '#1d20ff', fontSize: '20px', textAlign: 'center' }}>
                 Para nos conhecer é necessário saber do que é composta a nossa empresa desde internamente até a visibilidade externa
@@ -112,9 +117,9 @@ export default function About() {
                         <p className="ID_text">
                           Em todas os comunicados e até mesmo no desenvolvimento do site da ROBLES IDENTITY, nós usamos 3 fontes padrões, específicas para cada proposta. A fontes escolhidas por nós definem exatamente quem
                           somos.
-                          - A fonte <span className="text-uppercase text-inline" style={{ display: 'inline', color: '#1d20ff', fontFamily: 'Roboto Condensed' }}>" Noto Sans Display "</span> representa uma proposta mais séria e moderna, algo mais padrão social.
-                          - A fonte ** representa uma modernidade mais juvial, algo mais divertido e atualizado, que também definem a inovação e a evolução.
-                          - A fonte ** representa essas duas características as anteriores que unidas, trazem uma proposta de identidade única, podendo ter uma identidade juvial, atualizada mas ao mesmo tempo também moderna e
+                          <br /><br />- A fonte <span className="text-uppercase text-inline" style={{ display: 'inline', color: '#1d20ff', fontFamily: 'Roboto Condensed' }}>" Noto Sans Display "</span> representa uma proposta mais séria e moderna, algo mais padrão social.
+                          <br /><br />- A fonte ** representa uma modernidade mais juvial, algo mais divertido e atualizado, que também definem a inovação e a evolução.
+                          <br /><br />- A fonte ** representa essas duas características as anteriores que unidas, trazem uma proposta de identidade única, podendo ter uma identidade juvial, atualizada mas ao mesmo tempo também moderna e
                           sofisticada.
                         </p>
 
@@ -131,37 +136,48 @@ export default function About() {
 
                         <p className="ID_text">
                           A idéia da ROBLES IDENTITY surgiu desde muito tempo atrás, quando ambos os fundadores trabalhavam de forma autônoma desenvolvendo idéias para clientes internos.
-                          Percebemos que a maioria dos autônomos não possuíam um projeto construído tendo como base uma identidade, e por esse motivo não obtinham resultados satisfatóriosem relação a reconhecimento
-                          e crescimento. É muito difícil um comércio dar certo sem uma parte gráfica, um reconhecimento de visibilidade e sem uma entrada na internet, sem esses requisitos você pode sim ser reconhecido, mas apenas
-                          por quem você procura ou por pessoas próximas a você. Empresas grandes, multi nacionais, que possuem filiadas possuem identidade formada e são inseridas totalmente no maior meio de comunicação existente,
+                          <br /><br />Percebemos que a maioria dos autônomos não possuíam um projeto construído tendo como base uma identidade,
+                          e por esse motivo não obtinham resultados satisfatóriosem relação a reconhecimento
+                          e crescimento.
+                          <br /><br />É muito difícil um comércio dar certo sem uma parte gráfica,
+                          um reconhecimento de visibilidade e sem uma entrada na internet,
+                          sem esses requisitos você pode sim ser reconhecido, mas apenas
+                          por quem você procura ou por pessoas próximas a você.
+                          <br /><br />Empresas grandes, multi nacionais,
+                          que possuem filiadas possuem identidade formada e são inseridas totalmente no maior meio de comunicação existente,
                           A INTERNET, são conhecidas por todos de forma multiplicada, por isso a importância da identidade.
-                          Observando isso e até mesmo trabalhando nesses meios, juntando nossas idéias desenvolvemos um método que em união com vocês, nossos clientes, desenvolvemos do zero uma identidade e um domínio
+                          <br /><br />Observando isso e até mesmo trabalhando nesses meios,
+                          juntando nossas idéias desenvolvemos um método que em união com vocês,
+                          nossos clientes, desenvolvemos do zero uma identidade e um domínio
                           para a sua empresa, para que ela seja reconhecida e expandida.
                         </p>
 
-                        <p className="ID_text">
+                        <br /><p className="ID_text">
                           Nos nossos valores estão envolvidos o caráter, a honestidade, a empatia e o compromisso.
                         </p>
 
-                        <p className="ID_text">
-                          Caráter - Nossa empresa é baseada na identidade, a identidade é formada pelo caráter, e o caráter é formado por características que definem quem nós somos. Por esse motivo é de extrema importância que
+                        <br /><p className="ID_text">
+                          <span style={{ color: '#1d20ff' }}>Caráter</span>
+                          <br />Nossa empresa é baseada na identidade, a identidade é formada pelo caráter, e o caráter é formado por características que definem quem nós somos. Por esse motivo é de extrema importância que
                           que nos nossos valores estivesse incluído o caráter.
                         </p>
 
-                        <p className="ID_text">
+                        <br /><p className="ID_text">
                           Honestidade - Somos totalmente entregues as propostas que recebemos e que entregamos, sem acepção de recursos, pessoas ou idéias, a honestidade faz parte da nossa identidade.
                         </p>
 
-                        <p className="ID_text">
-                          Empatia - Nossa empresa é uma empresa totalmente voltada à pessoas desde o princípio. Nos preocupamos com seus sonhos, projetos e metas e buscamos realizar tudo isso da melhor forma possível
+                        <br /><p className="ID_text">
+                          <span style={{ color: '#1d20ff' }}>Empatia</span>
+                          <br />Nossa empresa é uma empresa totalmente voltada à pessoas desde o princípio. Nos preocupamos com seus sonhos, projetos e metas e buscamos realizar tudo isso da melhor forma possível
                           indicando o caminho e seguindo seus passos até que possa caminhar sozinho.
                         </p>
 
-                        <p className="ID_text">
-                          Compromisso - Sempre que nos comprometemos com um projeto, seja ele desafiador ou não, nos dedicamos compromissadamente a eles até que sejam concluídos com excelência e satisfação.
+                        <br /><p className="ID_text">
+                          <span style={{ color: '#1d20ff' }}>Compromisso</span>
+                          <br />Sempre que nos comprometemos com um projeto, seja ele desafiador ou não, nos dedicamos compromissadamente a eles até que sejam concluídos com excelência e satisfação.
                         </p>
 
-                        <h1 className="mt-8 text-center" style={{ color: '#ff65c3', fontSize: '30px' }}>TUDO ISSO FORMA O NOSSO ID!</h1>
+                        <h1 className="mt-8 text-center" style={{ color: '#ff65c3', fontSize: '30px' }}>TUDO ISSO FORMA O <span style={{ color: '#1d20ff', display: 'inline' }}>NOSSO ID!</span></h1>
 
                       </div>
                     </div>
@@ -170,7 +186,7 @@ export default function About() {
               </div>
             </div>
             <div className="right">
-              <img src="https://res.cloudinary.com/robles-identity/image/upload/v1627523061/1627441762764_copy_1280x1280_ndb4xv.png" alt="me" />
+              <img src="https://res.cloudinary.com/robles-identity/image/upload/v1633872268/PicsArt_10-10-10.24.16_rbspen.jpg" alt="me" />
             </div>
           </div>
           <div className="about__info__items">

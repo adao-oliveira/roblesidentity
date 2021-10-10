@@ -29,7 +29,7 @@ const FormStyle = styled.form`
     width: 100%;
     font-size: 2rem;
     padding: 1.2rem;
-    color: var(--gray-1);
+    color: var(--white);
     background-color: var(--deep-dark);
     outline: none;
     border: none;
@@ -42,7 +42,7 @@ const FormStyle = styled.form`
   }
   button[type='submit'] {
     background-color: var(--gray-1);
-    color: var(--black);
+    color: var(--white);
     font-size: 2rem;
     display: inline-block;
     outline: none;
@@ -100,7 +100,9 @@ export default function ContactForm() {
               />
             </label>
           </div>
-          <button type="submit">Enviar Mensagem</button>
+          <div className="col text-center">
+            <button type="submit">Enviar Mensagem</button>
+          </div>
         </form>
       </FormStyle>
     </>
