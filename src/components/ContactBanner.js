@@ -31,8 +31,8 @@ export default function ContactBanner() {
     <ContactBannerStyles>
       <div className="container -mt-32 -mb-32">
         <div className="contactBanner__wrapper">
-          <PText>Tenha um projeto em mente</PText>
-          <h3 className="contactBanner__heading">Deixa nós te ajudar</h3>
+          <PText>Tem um projeto em mente?</PText>
+          <h3 className="contactBanner__heading">Deixe-nos te ajudar</h3>
           <Button btnText="Contate-nos" btnLink="/contact" />
         </div>
       </div>

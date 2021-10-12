@@ -69,7 +69,7 @@ const HeroStyles = styled.div`
       transform: translateY(-70px) rotate(90deg);
       letter-spacing: 0.7rem;
       text-transform: uppercase;
-      color: red;
+      color: #ff65c3;
     }
     img {
       max-height: 45px;
@@ -94,7 +94,7 @@ const HeroStyles = styled.div`
           transform: rotate(-90deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
-          color: red;
+          color: #ff65c3;
         }
       }
     }
@@ -184,15 +184,6 @@ export default function HeroSection() {
                     rel="noreferrer"
                   >
                     FB
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    TW
                   </a>
                 </li>
                 <li>

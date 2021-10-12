@@ -75,8 +75,6 @@ export default function ContactForm() {
                 type="email"
                 id="email"
                 name="email"
-                maxLength="11"
-                onkeypress="mascara(this)"
               />
             </label>
           </div>
@@ -87,6 +85,8 @@ export default function ContactForm() {
                 type="number"
                 id="telefone"
                 name="telefone"
+                maxLength="11"
+                onkeypress="mascara(this)"
               />
             </label>
           </div>

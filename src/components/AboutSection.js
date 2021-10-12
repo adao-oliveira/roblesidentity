@@ -130,7 +130,7 @@ export default function AboutSection() {
           </PText>
         </div>
         <div className="aboutSection__right">
-          <img className="aboutImg" src={AboutImg} alt="Img" />
+          <img className="aboutImg" src="https://res.cloudinary.com/robles-identity/image/upload/v1634020116/1634020088185_ef31ee.png" alt="Img" />
         </div>
       </div>
     </AboutSectionStyles>
