@@ -75,6 +75,20 @@ const AboutPageStyles = styled.div`
       font-size: 3rem;
     }
   }
+  @keyframes fa-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+.fa-blink {
+  -webkit-animation: fa-blink .75s linear infinite;
+  -moz-animation: fa-blink .75s linear infinite;
+  -ms-animation: fa-blink .75s linear infinite;
+  -o-animation: fa-blink .75s linear infinite;
+  animation: fa-blink .75s linear infinite;
+  height: 48px;
+  width: 48px
+}
 `;
 
 export default function About() {
@@ -117,9 +131,15 @@ export default function About() {
                         <p className="ID_text">
                           Em todas os comunicados e até mesmo no desenvolvimento do site da ROBLES IDENTITY, nós usamos 3 fontes padrões, específicas para cada proposta. A fontes escolhidas por nós definem exatamente quem
                           somos.
-                          <br /><br />- A fonte <span className="text-uppercase text-inline" style={{ display: 'inline', color: '#1d20ff', fontFamily: 'Roboto Condensed' }}>" Noto Sans Display "</span> representa uma proposta mais séria e moderna, algo mais padrão social.
-                          <br /><br />- A fonte ** representa uma modernidade mais juvial, algo mais divertido e atualizado, que também definem a inovação e a evolução.
-                          <br /><br />- A fonte ** representa essas duas características as anteriores que unidas, trazem uma proposta de identidade única, podendo ter uma identidade juvial, atualizada mas ao mesmo tempo também moderna e
+                          <br /><br />
+                          <img class="fa-blink" src="https://res.cloudinary.com/robles-identity/image/upload/v1627523061/1627441762764_copy_1280x1280_ndb4xv.png" style={{display:'inline'}} />
+                          A fonte <span className="text-uppercase text-inline" style={{ display: 'inline', color: '#1d20ff', fontFamily: 'Roboto Condensed' }}>" Noto Sans Display "</span> representa uma proposta mais séria e moderna, algo mais padrão social.
+                          <br /><br />
+                          <img class="fa-blink" src="https://res.cloudinary.com/robles-identity/image/upload/v1627523061/1627441762764_copy_1280x1280_ndb4xv.png" style={{display:'inline'}} />
+                          A fonte ** representa uma modernidade mais juvial, algo mais divertido e atualizado, que também definem a inovação e a evolução.
+                          <br /><br />
+                          <img class="fa-blink" src="https://res.cloudinary.com/robles-identity/image/upload/v1627523061/1627441762764_copy_1280x1280_ndb4xv.png" style={{display:'inline'}} />
+                          A fonte ** representa essas duas características as anteriores que unidas, trazem uma proposta de identidade única, podendo ter uma identidade juvial, atualizada mas ao mesmo tempo também moderna e
                           sofisticada.
                         </p>
 
@@ -157,7 +177,7 @@ export default function About() {
                         </p>
 
                         <br /><p className="ID_text">
-                          <span style={{ color: '#1d20ff' }}>Caráter</span>
+                          <span style={{ color: '#1d20ff', fontSize:'25px' }}>Caráter</span>
                           <br />Nossa empresa é baseada na identidade, a identidade é formada pelo caráter, e o caráter é formado por características que definem quem nós somos. Por esse motivo é de extrema importância que
                           que nos nossos valores estivesse incluído o caráter.
                         </p>
@@ -167,13 +187,13 @@ export default function About() {
                         </p>
 
                         <br /><p className="ID_text">
-                          <span style={{ color: '#1d20ff' }}>Empatia</span>
+                          <span style={{ color: '#1d20ff', fontSize:'25px' }}>Empatia</span>
                           <br />Nossa empresa é uma empresa totalmente voltada à pessoas desde o princípio. Nos preocupamos com seus sonhos, projetos e metas e buscamos realizar tudo isso da melhor forma possível
                           indicando o caminho e seguindo seus passos até que possa caminhar sozinho.
                         </p>
 
                         <br /><p className="ID_text">
-                          <span style={{ color: '#1d20ff' }}>Compromisso</span>
+                          <span style={{ color: '#1d20ff', fontSize:'25px' }}>Compromisso</span>
                           <br />Sempre que nos comprometemos com um projeto, seja ele desafiador ou não, nos dedicamos compromissadamente a eles até que sejam concluídos com excelência e satisfação.
                         </p>
 
