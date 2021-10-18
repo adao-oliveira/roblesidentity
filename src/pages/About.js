@@ -133,13 +133,13 @@ export default function About() {
                           somos.
                           <br /><br />
                           <img class="fa-blink" src="https://res.cloudinary.com/robles-identity/image/upload/v1627523061/1627441762764_copy_1280x1280_ndb4xv.png" style={{display:'inline'}} />
-                          A fonte <span className="text-uppercase text-inline" style={{ display: 'inline', color: '#1d20ff', fontFamily: 'Roboto Condensed' }}>" Noto Sans Display "</span> representa uma proposta mais séria e moderna, algo mais padrão social.
+                          A fonte <span className="text-uppercase text-inline" style={{ display: 'inline', color: '#1d20ff', fontFamily: 'Roboto Condensed' }}>" Roboto Mono Regular "</span> representa uma proposta mais séria e moderna, algo mais padrão social.
                           <br /><br />
                           <img class="fa-blink" src="https://res.cloudinary.com/robles-identity/image/upload/v1627523061/1627441762764_copy_1280x1280_ndb4xv.png" style={{display:'inline'}} />
-                          A fonte ** representa uma modernidade mais juvial, algo mais divertido e atualizado, que também definem a inovação e a evolução.
+                          A fonte <span className="text-uppercase text-inline" style={{ display: 'inline', color: '#1d20ff', fontFamily: 'Roboto Condensed' }}>"  "</span> representa uma modernidade mais juvial, algo mais divertido e atualizado, que também definem a inovação e a evolução.
                           <br /><br />
                           <img class="fa-blink" src="https://res.cloudinary.com/robles-identity/image/upload/v1627523061/1627441762764_copy_1280x1280_ndb4xv.png" style={{display:'inline'}} />
-                          A fonte ** representa essas duas características as anteriores que unidas, trazem uma proposta de identidade única, podendo ter uma identidade juvial, atualizada mas ao mesmo tempo também moderna e
+                          A fonte <span className="text-uppercase text-inline" style={{ display: 'inline', color: '#1d20ff', fontFamily: 'Roboto Condensed' }}>" Noto Sans Display "</span> representa essas duas características as anteriores que unidas, trazem uma proposta de identidade única, podendo ter uma identidade juvial, atualizada mas ao mesmo tempo também moderna e
                           sofisticada.
                         </p>
 

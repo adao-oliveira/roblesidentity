@@ -56,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
 
   ::-webkit-scrollbar {
     -webkit-appearance: none;
-    width: 7px;
+    width: 15px;
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 4px;
