@@ -10,7 +10,7 @@ h2{
   text-align: center;
   font-size: 30px;
 }
-  padding: 10rem 0;
+  padding: 2rem 0;
   .contactSection__wrapper {
     display: flex;
     gap: 5rem;
@@ -65,7 +65,7 @@ export default function ContactSection() {
           <div className="left">
             <a href="https://www.instagram.com/roblesidentity/"><ContactInfoItem icon={<FaInstagram />} text="@roblesidentity" /></a>
             <a href="https://www.facebook.com/"><ContactInfoItem icon={<FaFacebook />} text="roblesidentity" /></a>
-            <ContactInfoItem icon={<MdEmail />} text="roblesidentity@outlook.com" />
+            <a href = "mailto: roblesidentity@outlook.com"><ContactInfoItem icon={<MdEmail />} text="Envie um e-mail" /></a>
           </div>
           <div className="right">
             <ContactForm />

@@ -18,7 +18,6 @@ export default function Feedback() {
   return (
   <>
     <div className="fundo">
-
       <section className="form-section">
         <h1> Já nos conhece? Avalie-nos 💕</h1>
 
@@ -43,7 +42,8 @@ export default function Feedback() {
 .fundo{
   width: 100%;
   height: 100%;
-  background: linear-gradient(0, #120c56, #000000);
+  background: linear-gradient(#120c56, #000000);
+  margin-top: 12rem;
 }
 
     section {

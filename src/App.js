@@ -25,11 +25,11 @@ export default function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
           <Route path="/feedback">
             <Feedback />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
         <Footer />

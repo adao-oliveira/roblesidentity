@@ -87,7 +87,7 @@ const AboutPageStyles = styled.div`
   -o-animation: fa-blink .75s linear infinite;
   animation: fa-blink .75s linear infinite;
   height: 48px;
-  width: 48px
+  width: 48px;
 }
 `;
 
@@ -210,20 +210,20 @@ export default function About() {
             </div>
           </div>
           <div className="about__info__items">
-            <div className="about__info__item">
+            <div className="about__info__item ">
               <h1 className="about__info__heading">Nossas Habilidades</h1>
 
               <AboutInfoItem
                 title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT', 'NEXT']}
+                items={['HTML', 'CSS', 'REACT', 'NEXT']}
               />
               <AboutInfoItem
                 title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
+                items={['JavaScript','Node', 'Express']}
               />
               <AboutInfoItem
                 title="Design"
-                items={['Photoshop', 'Canva', 'Figma']}
+                items={['PhotoScape','Photoshop', 'Canva', 'Figma','Tratamento de imagens']}
               />
             </div>
           </div>
